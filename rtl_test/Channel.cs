@@ -5,10 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
+using Microsoft.Data.SQLite.Core;
 using Newtonsoft.Json.Linq;
 
-namespace ClassLibrary1
+
+namespace ChannelLib
 {
     public class Channel
     {
@@ -36,14 +37,19 @@ namespace ClassLibrary1
     }
     public class CHANNELS
     {
+        public static List<ChanStruct> chlist;
+
+        
          
     }
 
-    public class Rootobject
-    {
-        
-
-    }
+ public public struct ChanStruct
+ {
+    public string name;
+    public int bandwidth;
+    public double frequency;
+    
+ }
 
     public class Chan_class
     {
