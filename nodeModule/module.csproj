@@ -1,16 +1,80 @@
 <Project Sdk="NApi.Sdk.CLR/1.0.0-beta7">
   <PropertyGroup>
-      <TargetFramework>net6.0</TargetFramework>
+      <TargetFramework>net8.0</TargetFramework>
       <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="freqs.db" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="8.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="RtlSdrManager" Version="0.2.1" />
     <PackageReference Include="SQLite" Version="3.13.0" />
-    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
-    <PackageReference Include="System.Data.SQLite.EF6" Version="1.0.118" />
-    <PackageReference Include="System.Data.SQLite.Linq" Version="1.0.118" />
-    <PackageReference Include="System.Text.Json" Version="8.0.1" />
+    
+
+    <PackageReference Include="Microsoft.JavaScript.NodeApi" Version="0.4.27" />
+    
+
+    <PackageReference Include="Microsoft.JavaScript.NodeApi.Generator" Version="0.4.27" />
+    
+
+    <PackageReference Include="Google.Apis.Core" Version="1.66.0" />
+    
+
+    <PackageReference Include="Microsoft.Data.OData" Version="5.8.5" />
+    
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="8.0.1" />
+    
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+    
+
+    <PackageReference Include="Node.js.redist" Version="20.9.0" />
+    
+
+    <PackageReference Include="Npm" Version="3.5.2" />
+    
+
+    <PackageReference Include="AWSSDK.Core" Version="3.7.302.4" />
+    
+
+    <PackageReference Include="AWSSDK.S3" Version="3.7.305.20" />
+    
+
+    <PackageReference Include="AWSSDK.Lambda" Version="3.7.303.40" />
+    
+
+    <PackageReference Include="AWSSDK.ApiGatewayV2" Version="3.7.300.44" />
+    
+
+    <PackageReference Include="AWSSDK.SQS" Version="3.7.300.44" />
+    
+
+    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.300.44" />
+    
+
+    <PackageReference Include="QuantConnect.pythonnet" Version="2.0.26" />
+    
+
+    <PackageReference Include="pythonnet" Version="3.0.3" />
+    
+
+    <PackageReference Include="MathematicaSharp" Version="0.5.0" />
+    
+
+    <PackageReference Include="Wolfram.NETLink" Version="1.7.1" />
+    
+
+    <PackageReference Include="TroyWeb.WolframLanguage.Activities" Version="4.4.0" />
+    
+
+    <PackageReference Include="dotnet-ef" Version="8.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="freqs.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 </Project>
